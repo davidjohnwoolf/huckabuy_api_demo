@@ -1,1 +1,14 @@
 <h1>Results</h1>
+
+<% @products_hash['results'].each do |result| %>
+
+  <h3>Product</h3>
+  
+  <ul>
+    <% result.each do |key, value| %>
+        <li><strong><%= key %></strong> : <%= value %></li>
+    <% end %>
+    <br>
+  </ul>
+
+<% end %>
