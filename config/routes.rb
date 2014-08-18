@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get '/product/:id' => 'products#show'
 
+  get '/search' => 'products#search'
+
 end
