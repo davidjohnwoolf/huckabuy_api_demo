@@ -1,1 +1,8 @@
-<h1>Site Index</h1>
+<h1>Products</h1>
+
+<ul>
+  <% @products.each do |product| %>
+    <h4><%= product.name %></h4>
+    <li>UPC: <%= product.upc %></li>
+  <% end %>
+</ul>
