@@ -12,4 +12,8 @@ class ProductsController < ApplicationController
 
   end
 
+  def results
+
+  end
+
 end
