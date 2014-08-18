@@ -2,7 +2,7 @@
 
 <ul>
   <% @products.each do |product| %>
-    <h4><%= product.name %></h4>
+    <h4><%= link_to product.name, product_path(product.id) %></h4>
     <li>UPC: <%= product.upc %></li>
   <% end %>
 </ul>

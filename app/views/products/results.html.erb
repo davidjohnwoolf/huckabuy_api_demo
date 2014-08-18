@@ -1,9 +1,14 @@
 <h1>Results</h1>
 
+<%= form_tag('/results') do %>
+  <h4>Import These Products</h4>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag 'Import' %>
+<% end %>
+
 <% @products_hash['results'].each do |result| %>
 
   <h3>Product</h3>
-  
   <ul>
     <% result.each do |key, value| %>
         <li><strong><%= key %></strong> : <%= value %></li>
@@ -12,3 +17,5 @@
   </ul>
 
 <% end %>
+
+<%= link_to '<< Back to search', search_path %>
